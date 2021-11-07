@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --surface: #fff;
+    --bg: #e4e4e7;
+    --text: #ffffff;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --inset: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.dark-theme {
+    --surface: #27272a;
+    --bg: #18181b;
+    --text: #a1a1aa;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+    --shadow-inner: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.6);
+    color: rgb(196, 196, 196);
+}
+
+body {
+    background-color: var(--surface);
+    color: rgb(56, 56, 56);
+    height: 40vh;
+    transition: background-color 0.15s ease-in 0.4s;
+    margin: auto;
+    border: 3px solid rgb(196, 196, 196);
+    border-radius: 4%;
+    padding: 10px;
+    align-items: center;
+    width: 40%;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.toggle-theme {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    position: relative;
+    height: 50px;
+    width: 200px;
+}
+
+.toggle-theme input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bg);
+    box-shadow: var(--inset);
+    border-radius: 50px;
+    transition: background-color 0.15s ease-in 0.4s, box-shadow 0.15s ease-in 0.4s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.switch:before {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 95px;
+    top: 5px;
+    left: 5px;
+    background-color: var(--surface);
+    box-shadow: var(--shadow);
+    border-radius: 40px;
+    transition: transform 0.3s, background-color 0.15s ease-in 0.4s,
+            box-shadow 0.15s ease-in 0.4s;
+}
+
+input:checked + .switch:before {
+    transform: translateX(95px);
+}
+
+.toggle-theme {
+    color: var(--text);
+    transition: color 0.15s ease-in 0.4s;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+        left: -32rem;
+}
+
+.toggle-theme, p {
+    color: rgb(196, 196, 196);
+    z-index: 1;
+}
+
+.payBtn {
+    background-color: orange;
+    height: 12%;
+    width: 12%;
+    font-size: 120%;
+    border-radius: 150px;
+    text-align: center;
+    cursor: pointer;
+    size: 40%;
+}

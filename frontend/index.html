@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <label class="toggle-theme">
+        <input type="checkbox" />
+        <span class="switch"></span>
+        <p>Light</p>
+        <p>Dark</p>
+      </label>
+      
+    <h1> Checkout using QR </h1> 
+    <!-- Idhar dekh liyo bc -->
+    <p> Will be paying from wallet <span id="walletId"></span> </p>
+
+    <div class="mainText">
+        <p> Your wallet balance: <span id="walletBalance"></span> </p>
+        <p>Payable amount: <span id="productPrice"></span> </p>
+    </div>
+
+    <button class="payBtn" onclick="pay()">Pay</button>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

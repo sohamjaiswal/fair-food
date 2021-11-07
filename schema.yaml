@@ -1,0 +1,29 @@
+name: FarmFair
+description: Provides farmers with a stable income!
+structs: 
+  Transaction:
+    buyer: AgentID
+    farmer: Address
+    retailer: Address
+    amount: Int64
+typedefs: {}
+state:
+  transactions: Transaction[]
+funcs:
+  init:
+    params:
+      owner: AgentID? // optional owner of this smart contract
+  setOwner:
+    access: owner // current owner of this smart contract
+    params:
+      owner: AgentID // new owner of this smart contract
+  transact:
+    params:
+      buyer: AgentID // the address of the buyer's wallet
+      farmer: Address // the farmer's wallet
+      retailer: Address // the retailer's wallet
+      amount: Int64 // the amount that would be charged to the user
+views:
+  getOwner:
+    results:
+      owner: AgentID // current owner of this smart contract
