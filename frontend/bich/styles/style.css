@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* https://i.pinimg.com/originals/38/62/59/38625950889ac5bc6a35f73617a5e7e8.jpg */
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+    margin: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.overview {
+    padding: 2%;
+    padding-bottom: 4%;
+    display: flex;
+    float: left;
+    clear: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6%;
+    border: #6b6363 solid;
+    border-radius: 2rem;
+}
+
+.img1 {
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.textShit {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.productDesc {
+    font-weight: 500;
+}
+
+.buyShit {
+    display: flex;
+    position: relative;
+    font-size: 25px;
+
+}
+
+.priceDig {
+    font-weight: 900;
+    color:rgba(0, 102, 255, 0.857);
+}
+
+.qty-container {
+    vertical-align: baseline;
+    margin-left: 5px;
+    margin-right: 20px;
+    border: 3px solid rgb(196, 196, 196);
+    border-radius: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.qty-num {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.VerifiableCredential{
+  display: flex;
+  position: relative;
+  padding-left: 20px;
+  margin: 13px;
+  border-radius: 50px;
+  margin-top: 1%;
+  background: #007bff60;
+}
+
+.proceedKey {
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0057FF;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.VerifiableCredential i{
+   color: black;
+   display: flex;
+}
+
+i {
+    margin-top: 0.8%;
+    margin-right: 1%;
+    margin-left: auto;
+    vertical-align: bottom;
+    font-size: 4rem;
+}
+
+.iota {
+    padding-left: 25px;
+}
+
+.iota-stuff {
+    border: #6b6363 solid;
+    border-radius: 20px;
+}
+
+
+/* -- quantity box -- */
+
+.quantity {
+    display: inline-block; }
+   
+   .quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+   }
+   
+   .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; }
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor:pointer;}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+    
+/* .productDesc {
+    
+} */
+
+
+
